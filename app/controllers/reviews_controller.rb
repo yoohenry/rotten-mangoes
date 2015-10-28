@@ -7,7 +7,7 @@ class ReviewsController < ApplicationController
   def create
     @movie = Movie.find(params[:movie_id])
     @review = @movie.reviews.build(review_param)
-    @review_user.id = current_user.id
+    @review.user_id = current_user.id
 
     if @review.save
       redirect_to @movie, notice: "Review created successfully"
