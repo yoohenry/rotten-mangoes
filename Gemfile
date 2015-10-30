@@ -37,6 +37,9 @@ gem 'shotgun'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0' 
 
+# Use carrierwave for uploading images from the user
+gem 'carrierwave'
+gem 'rmagick'
 # Use unicorn as the app server
 # gem 'unicorn'
 
